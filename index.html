@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+
+<body class="bg-dark text-white">
+
+    <div class="container mt-5">
+        <h1 class="display-1">Trivia </h1>
+    </div>
+    <div class="container form-group">
+        <label for="questions-number">Eige cuántas preguntas quieres</label>
+        <select onchange="getQuestions()" class="form-control" id="questions-number">
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+        </select>
+        
+      </div>
+    <div class="container mt-5">
+         <!-- aqui van las categorias -->
+        <label>Selecciona la categoria de las preguntas</label><br>
+        <select onchange="selecfun()" name="" id="t-categorias"></select>
+        <br> <br>
+        <!-- aqui van los tipos de preguntas -->
+        <label>Selecciona los tipos de las preguntas</label><br>
+        <select onchange="selecfun()" name="" id="t-type"></select>
+    </div>
+    <!-- aqui van las preguntas y respuestas -->
+   <div class="container mt-5">
+         <div class="card text-white bg-dark mt-5" id="t-preguntas"></div>
+   </div>
+   <div class="container mt-5">
+        <div class="card text-white bg-dark mt-5" id="t-resultados"></div>
+   </div>
+    <div class="container mt-5"><button id="buttonrr" type="button" onclick="buttonrr()"
+            name="button">Enviar Respuestas</button></div>
+
+
+    <br><br><br>
+
+
+
+
+
+
+
+
+</body>
+<script src="/Js/main.js"></script>
+
+</html>
